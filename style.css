@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+input, button, select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.area {
+  margin-top: 1rem;
+}
+.output {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+.total {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.note {
+  margin-bottom: 1.5rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+.footer {
+  text-align: right;
+  font-family: sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
