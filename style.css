@@ -4,6 +4,12 @@ body {
   max-width: 600px;
   margin: auto;
 }
+.note {
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  font-family: sans-serif;
+}
 input, button, select {
   padding: 0.5rem;
   font-size: 1rem;
@@ -21,12 +27,6 @@ input, button, select {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.note {
-  margin-bottom: 1.5rem;
-  background: #f0f0f0;
-  padding: 1rem;
-  font-family: sans-serif;
-}
 .footer {
   text-align: right;
   font-family: sans-serif;
@@ -35,4 +35,5 @@ input, button, select {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
