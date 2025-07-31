@@ -8,9 +8,11 @@ body {
   margin-bottom: 1rem;
   background: #f0f0f0;
   padding: 1rem;
-  font-family: sans-serif;
 }
-input, button, select {
+.notefooter {
+  text-align: right;
+}
+select, input, button {
   padding: 0.5rem;
   font-size: 1rem;
   margin-top: 0.5rem;
@@ -19,7 +21,7 @@ input, button, select {
   margin-top: 1rem;
 }
 .output {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   font-weight: bold;
 }
 .total {
@@ -27,11 +29,7 @@ input, button, select {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.footer {
-  text-align: right;
-  font-family: sans-serif;
-}
-.center {
+.calculate {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
