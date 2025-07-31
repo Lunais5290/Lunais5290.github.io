@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>永遠戦線 青春戦 Lunatic スコア計算</title>
   <link rel="stylesheet" href="style.css">
+  <script src="score.js"></script>
 </head>
 <body>
+
   <h1>永遠戦線 青春戦 Lunatic スコア計算</h1>
 
   <div class="note">
     ・入力ボックスにオーバーダメージを入力してください<br>
     ・出力結果には誤差がありますがほとんどの場合0.01%未満です<br>
     ・オーバーダメージ4億以上は精度が非常に悪いです
-    <div class="footer">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
+    <div class="notefooter">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
   </div>
 
   <label for="mode">入力モード</label>
   <select id="mode">
     <option value="simple">万単位入力</option>
-    <option value="precision">フル入力</option>
+    <option value="full">フル入力</option>
   </select>
-
+  
   <div class="area">
     エリア1：<input type="number" id="area1" />
     <span class="output" id="out1">→</span>
@@ -44,16 +46,19 @@
   </div>
 
   <div class="total" id="totalOutput">合計スコア：</div>
-  <div class="center">
-    <button onclick="calculateAll()">計算する</button>
+  
+  <div class="calculate">
+    <button onclick="calculate()">計算する</button>
   </div>
 
-<hr>
+  <hr>
+  
+  <div>
+    更新履歴<br>
+    2025/08/01 ver.1.02 デザイン改良とソースコード整理。<br>
+    2025/06/10 ver.1.01 計算処理部分を更新。<br>
+    2025/06/06 ver.1.00 公開。<br>
+  </div>
 
-更新履歴<br>
-2025/06/10 ver.1.01 計算処理部分を更新。<br>
-2025/06/06 ver.1.00 公開。<br>
-
-  <script src="score.js"></script>
 </body>
 </html>
