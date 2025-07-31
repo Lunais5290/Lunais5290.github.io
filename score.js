@@ -17,7 +17,7 @@ const B = [
   7500000
 ];
 
-function cal(x) {
+function alg(x) {
   const n = A.length;
   let h = [], a = [], l = [], mu = [], z = [], b = [], c = [], d = [];
 
@@ -51,7 +51,7 @@ function cal(x) {
   return B[i] + b[i] * dx + c[i] * dx * dx + d[i] * dx * dx * dx;
 }
 
-function calculateAll() {
+function calculate() {
   const mode = document.getElementById("mode").value;
   let total = 0;
   for (let i = 1; i <= 5; i++) {
@@ -59,9 +59,9 @@ function calculateAll() {
     if (isNaN(rawInput)) continue;
 
     const input = (mode === "simple") ? rawInput * 10000 : rawInput;
-    const base = cal(input);
-    const offset = (i === 5) ? 32500000 : 27500000;
-    const score = Math.round(base + offset);
+    const base = (i === 5) ? 32500000 : 27500000;
+    const add = alg(input);
+    const score = Math.round(base + add);
 
     document.getElementById(`out${i}`).innerText = `→ ${score.toLocaleString()}`;
     total += score;
