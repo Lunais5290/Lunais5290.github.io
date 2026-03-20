@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ターン強化 防御値計算</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="turn.js"></script>
+
+  <a href="index.html">
+    <img src="header.png" class="header">
+  </a> 
+
+</head>
+<body>
+  <h1>ターン強化 防御値計算</h1>
+
+  <div class="note">
+    ・1つ目の入力ボックスにターン数を入力してください<br>
+    ・2つ目の入力ボックスに防御値を入力してください<br>
+    ・100ターン以上は誤差が大きくなります<br>
+    <div class="notefooter">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
+  </div>
+  
+  <div class="list-turn">
+    ターン数：<input type="number" id="turn" />
+  </div>
+  <div class="list-defence">
+    防御値：<input type="number" id="defence" />
+  </div>
+
+  <div class="total" id="outputtrun">ターン強化防御値：</div>
+  
+  <div class="calculate">
+    <button onclick="calculateturn()">計算する</button>
+  </div>
+</body>
+</html>

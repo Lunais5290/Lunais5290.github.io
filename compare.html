@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>特殊バフ倍率 簡易計算</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="compare.js"></script>
+
+  <a href="index.html">
+    <img src="header.png" class="header">
+  </a> 
+
+</head>
+<body>
+  <h1>特殊バフ倍率 簡易計算</h1>
+
+  <div class="note">
+    ・現在はCRI攻撃のみに対応。<br>
+    ・小数第2位まで有効。<br>
+    <div class="notefooter">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
+  </div>
+
+  <div class="list-cri">
+    CRI攻撃Ⅰ：<input type="number" id="cri1" /> 段階
+  </div>
+  <div class="list-cri">
+    CRI攻撃Ⅱ：<input type="number" id="cri2" /> 段階
+  </div>
+  <div class="list-cri">
+    団結：<input type="number" id="criunity" /> %
+  </div>
+  <div class="list-cri">
+    ゾーン：<input type="number" id="crizone" /> %
+  </div>
+
+  <div class="total" id="outputcri">CRI攻撃：</div>
+  <div class="total" id="outputmag">特殊バフ倍率：</div>
+
+  <div class="calculate">
+    <button onclick="calculatecri()">計算する</button>
+  </div>
+</body>
+</html>

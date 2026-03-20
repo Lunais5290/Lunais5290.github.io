@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>永遠戦線 Lunatic スコア計算</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="score.js"></script>
+
+  <a href="index.html">
+    <img src="header.png" class="header">
+  </a> 
+
+</head>
+<body>
+  <h1>永遠戦線 Lunatic スコア計算</h1>
+
+  <div class="note">
+    ・入力ボックスにオーバーダメージを入力してください<br>
+    ・出力結果には誤差がありますがほとんどの場合0.01%未満です<br>
+    <div class="notefooter">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
+  </div>
+
+  <label>入力モード：</label>
+  <select id="mode">
+    <option value="simple">万単位入力</option>
+    <option value="full">フル入力</option>
+  </select>
+  
+  <div class="list-overdamege">
+    エリア1：<input type="number" id="area1" />
+    <span class="areascore" id="out1">→</span>
+  </div>
+  <div class="list-overdamege">
+    エリア2：<input type="number" id="area2" />
+    <span class="areascore" id="out2">→</span>
+  </div>
+  <div class="list-overdamege">
+    エリア3：<input type="number" id="area3" />
+    <span class="areascore" id="out3">→</span>
+  </div>
+  <div class="list-overdamege">
+    エリア4：<input type="number" id="area4" />
+    <span class="areascore" id="out4">→</span>
+  </div>
+  <div class="list-overdamege">
+    エリア5：<input type="number" id="area5" />
+    <span class="areascore" id="out5">→</span>
+  </div>
+
+  <details class="option">
+    <summary>追加設定</summary>
+    <div class="decreasescore">
+    スコア減点量：<input type="number" id="decreasescore" />
+  </div>
+  </details>
+
+  <div class="total" id="outputscore">合計スコア：</div>
+  
+  <div class="calculate">
+    <button onclick="calculatescore()">計算する</button>
+  </div>
+
+  <hr>
+  
+  <div>
+    更新履歴<br>
+    2026/03/20 ver.1.1.0 以下の修正と機能追加を行いました。<br>
+    ・入力オーバーダメージ10億以上の挙動を修正。<br>
+    ・追加設定でスコア減点機能を追加。<br>
+    2026/03/01 ver.1.0.7 計算処理部分を更新。<br>
+    2025/09/03 ver.1.0.6 計算処理部分を更新。<br>
+    2025/08/31 ver.1.0.5 計算処理部分を更新。<br>
+    2025/08/29 ver.1.0.4 タイトル名を更新。<br>
+    2025/08/03 ver.1.0.3 計算処理部分を更新。<br>
+    2025/08/01 ver.1.0.2 デザイン改良とソースコード整理。<br>
+    2025/06/10 ver.1.0.1 計算処理部分を更新。<br>
+    2025/06/06 ver.1.0.0 公開。<br>
+  </div>
+</body>
+</html>

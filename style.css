@@ -1,0 +1,136 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+select, input, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+}
+
+.btn-1 {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: solid 2px #cccccc;
+  background: #ffeeee;
+  color: #ff4444;
+  transition: 0.5s;
+}
+.btn-1:hover {
+  background: #ffdddd;
+}
+.btn-2 {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: solid 2px #cccccc;
+  background: #eeeeff;
+  color: #4444ff;
+  transition: 0.5s;
+}
+.btn-2:hover {
+  background: #ddddff;
+}
+.btn-3 {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: solid 2px #cccccc;
+  background: #eeffee;
+  color: #22cc22;
+  transition: 0.5s;
+}
+.btn-3:hover {
+  background: #ddffdd;
+}
+
+.note {
+  background: #f0f0f0;
+  padding: 1rem;
+}
+.notefooter {
+  text-align: right;
+}
+.total {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* score */
+#mode {
+  margin-top: 1rem;
+}
+.list-overdamege {
+  margin-top: 1rem;
+}
+.list-overdamege input {
+  width: 120px;
+}
+.areascore {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.option {
+  margin-top: 1rem;
+}
+.decreasescore input {
+  width: 90px;
+  margin-top: 1rem;
+}
+.calculate {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* turn */
+.list-turn input {
+  width: 60px;
+  margin-top: 1rem;
+}
+.list-defence input {
+  width: 120px;
+  margin-top: 1rem;
+}
+
+/* compare */
+.list-cri input {
+  width: 60px;
+  margin-top: 1rem;
+}
