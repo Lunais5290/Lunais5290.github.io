@@ -6,5 +6,5 @@ function calculateturn() {
 
   const result = Math.round(defence * A);
 
-  document.getElementById("outputtrun").textContent = "ターン強化防御値：" + result;
+  document.getElementById("outputturn").textContent = "ターン強化防御値：" + result;
 }
