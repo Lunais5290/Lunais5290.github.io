@@ -3,8 +3,7 @@ html {
 }
 body {
   font-family: sans-serif;
-  padding-bottom: 2rem;
-  padding: 0 1rem;
+  padding: 1rem;
   max-width: 600px;
   margin: auto;
 }
@@ -22,7 +21,7 @@ select, input, button {
 
 .btn-1 {
   display: block;
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   margin-top: 1rem;
   padding: 1rem;
@@ -31,36 +30,18 @@ select, input, button {
   font-weight: bold;
   font-size: 1.5rem;
   border-radius: 4px;
-  border: solid 2px #cccccc;
-  background: #ffeeee;
-  color: #ff4444;
+  border: solid 2px #ccc;
+  background: #fee;
+  color: #f44;
   transition: 0.5s;
 }
 .btn-1:hover {
-  background: #ffdddd;
+  background: #fdd;
 }
+
 .btn-2 {
   display: block;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 1rem;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 4px;
-  border: solid 2px #cccccc;
-  background: #eeeeff;
-  color: #4444ff;
-  transition: 0.5s;
-}
-.btn-2:hover {
-  background: #ddddff;
-}
-.btn-3 {
-  display: block;
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -70,17 +51,58 @@ select, input, button {
   font-weight: bold;
   font-size: 1.5rem;
   border-radius: 4px;
-  border: solid 2px #cccccc;
-  background: #eeffee;
-  color: #22cc22;
+  border: solid 2px #ccc;
+  background: #efe;
+  color: #0b0;
+  transition: 0.5s;
+}
+.btn-2:hover {
+  background: #dfd;
+}
+
+.btn-3 {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: solid 2px #ccc;
+  background: #eef;
+  color: #44f;
   transition: 0.5s;
 }
 .btn-3:hover {
-  background: #ddffdd;
+  background: #ddf;
+}
+
+.btn-4 {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  border: solid 2px #ccc;
+  background: #ffe;
+  color: #bb0;
+  transition: 0.5s;
+}
+.btn-4:hover {
+  background: #ffd;
 }
 
 .note {
-  background: #f0f0f0;
+  background: #eee;
   padding: 1rem;
 }
 .notefooter {
@@ -90,6 +112,22 @@ select, input, button {
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* compare */
+.list-cri input {
+  width: 60px;
+  margin-top: 1rem;
+}
+
+/* turn */
+.list-turn input {
+  width: 60px;
+  margin-top: 1rem;
+}
+.list-defence input {
+  width: 120px;
+  margin-top: 1rem;
 }
 
 /* score */
@@ -120,18 +158,8 @@ select, input, button {
   margin-bottom: 1.5rem;
 }
 
-/* turn */
-.list-turn input {
-  width: 60px;
-  margin-top: 1rem;
-}
-.list-defence input {
-  width: 120px;
-  margin-top: 1rem;
-}
-
-/* compare */
-.list-cri input {
+/* morale */
+.list-morale input {
   width: 60px;
   margin-top: 1rem;
 }
