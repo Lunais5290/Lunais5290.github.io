@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>信頼度維持周回 計算</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="morale.js"></script>
+
+  <a href="index.html">
+    <img src="header.png" class="header">
+  </a> 
+
+</head>
+<body>
+  <h1>信頼度維持周回 計算</h1>
+
+  <div class="note">
+    ・仲間ごとに固有のやる気回復タイミングがあるため誤差があります<br>
+    <div class="notefooter">製作者X(旧Twitter):<a href="https://x.com/Lunais5290" target="_blank"><span style="color: blue;">Lunais5290</span></a></div>
+  </div>
+  
+  <label>やる気モード：</label>
+  <select id="mode">
+    <option value="terakoya">寺子屋</option>
+    <option value="normal">通常</option>
+  </select>
+
+  <div class="list-morale">
+    開始やる気値：<input type="number" id="morale" />
+  </div>
+  <div class="list-morale">
+    周回時間：<input type="number" id="time" /> 秒
+  </div>
+
+  <div class="total" id="outputlaps">周回可能数：</div>
+  <div class="total" id="outputtime">周回可能時間：</div>
+  
+  <div class="calculate">
+    <button onclick="calculatemorale()">計算する</button>
+  </div>
+</body>
+</html>
