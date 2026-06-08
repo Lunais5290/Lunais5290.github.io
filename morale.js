@@ -7,12 +7,12 @@ function calculatemorale() {
   const outputtime = document.getElementById("outputtime");
 
   if (!Number.isInteger(morale) || morale < 1 || 75 <morale) {
-    alert("1~75の開始やる気値を入力してください。");
+    alert("開始やる気値に1~75を入力してください");
     return;
   }
 
   if (!Number.isFinite(time) || time < 1) {
-    alert("1以上の周回時間を入力してください。");
+    alert("周回時間は1秒以上を入力してください");
     return;
   }
 
