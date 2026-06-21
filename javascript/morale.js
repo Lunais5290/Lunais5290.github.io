@@ -6,7 +6,7 @@ function calculatemorale() {
   const outputlaps = document.getElementById("outputlaps");
   const outputtime = document.getElementById("outputtime");
 
-  if (!Number.isInteger(morale) || morale < 1 || 75 <morale) {
+  if (!Number.isInteger(morale) || morale < 1 || 75 < morale) {
     alert("開始やる気値に1~75を入力してください");
     return;
   }
