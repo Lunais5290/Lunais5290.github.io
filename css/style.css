@@ -114,8 +114,8 @@ select, input, button {
   font-weight: bold;
 }
 
-/* compare */
-.list-cri input {
+/* mag */
+.list-mag input {
   width: 60px;
   margin-top: 1rem;
 }
